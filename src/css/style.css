@@ -7,7 +7,6 @@
     --color-hover_btn: #1E3A8A;
     --color-shadow_btn: #60A5FA;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +32,7 @@ li {
 }
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin-inline: auto;
@@ -47,22 +46,30 @@ li {
     font-size: 1.8rem;
     outline: none;
 }
+.dark-white-mode {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+}
+.dark-white-mode:hover {
+    color: #9CA3AF;
+}
 .navbar-nav {
     display: flex;
-    gap: 100px;
+    gap: 30px;
 }
 .navbar-nav a {
     color: #fff;
     font-size: 1.2rem;
-    font-weight: 400;
     letter-spacing: 2px;
-    text-transform: uppercase;
 }
 .navbar-nav a:hover {
     color: #9CA3AF;
 }
 
-/*home - config container*/
+/* Home */
 section#home {
     position: relative;
 }
@@ -74,7 +81,6 @@ section#home {
     width: 90%;
     margin-inline: auto;
 }
-/*home - home content*/
 .home-content {
     display: flex;
     flex-direction: column;
@@ -118,7 +124,6 @@ section#home {
     width: 100%;
     mask-image: radial-gradient(circle, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 66%);
 }
-
 .icon-home {
     animation: float 3s ease-in-out infinite;
     color: #3B82F6;
@@ -141,14 +146,19 @@ section#home {
     color: var(--color-hover_btn);
 }
 
+/* Project */
 #project {
+    padding-block-start: 70px;
     height: 100vh;
     background-color: var(--color-emphasis);
 }
-
+.title-project {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
 
 /* Aniamtion */
-
 @keyframes float {
     0%, 100% {
         transform: translateY(0);

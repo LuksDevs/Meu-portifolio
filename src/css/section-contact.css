@@ -1,0 +1,11 @@
+section#contact {
+    background-color: #374151;
+    padding: 40px 0;
+}
+.container-contact {
+    background-color: var(--color-emphasis);
+    height: 150px;
+    border: 1px solid red;
+    max-width: 76%;
+    margin-inline: auto;
+}

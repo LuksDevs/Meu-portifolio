@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <script src="src/js/main.js" defer></script>
     <title>Meu portfólio - Lucas Ferreira</title>
 </head>
 <body>
@@ -22,6 +23,7 @@
             </div>  
         </nav>
     </header>
+
     <section id="home">
         <div class="container-home">
             <div class="home-content">
@@ -46,17 +48,317 @@
 
     <section id="project">
         <h2 class="title-project">🚀 Meus Projetos</h2>
-        <div>
-            <div class="cards-container">
-                <div class="cards">
+        <div class="carousel-container">
+            <div class="carousel-buttons">
+                <button type="button" class="prev btn-carousel"><i class="fa-solid fa-chevron-left"></i></button>
+                <button type="button" class="next btn-carousel"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="carousel" id="carousel">
+                <div class="card">
                     <img src="assets/image/projeto01.jpg" alt="Projeto01">
-                    <h3 class="title-card">Projeto 01</h3>
-                    <p class="descriptin-card">Protejo, Exemplo de descrição</p>
+                    <h3>Projeto 01</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi maxime. Eaque consequuntur dolorum.</p>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                            <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                            <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                            <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                            <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                            <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                        </div>
+                        <a href="#">Veja mais!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/image/projeto01.jpg" alt="Projeto01">
+                    <h3>Projeto 01</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi maxime. Eaque consequuntur dolorum.</p>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                            <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                            <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                            <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                            <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                            <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                        </div>
+                        <a href="#">Veja mais!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/image/projeto01.jpg" alt="Projeto01">
+                    <h3>Projeto 01</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi maxime. Eaque consequuntur dolorum.</p>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                            <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                            <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                            <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                            <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                            <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                        </div>
+                        <a href="#">Veja mais!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/image/projeto01.jpg" alt="Projeto01">
+                    <h3>Projeto 01</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi maxime. Eaque consequuntur dolorum.</p>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                            <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                            <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                            <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                            <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                            <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                        </div>
+                        <a href="#">Veja mais!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/image/projeto01.jpg" alt="Projeto01">
+                    <h3>Projeto 01</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi maxime. Eaque consequuntur dolorum.</p>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                            <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                            <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                            <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                            <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                            <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                        </div>
+                        <a href="#">Veja mais!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/image/projeto01.jpg" alt="Projeto01">
+                    <h3>Projeto 01</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi maxime. Eaque consequuntur dolorum.</p>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                            <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                            <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                            <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                            <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                            <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                        </div>
+                        <a href="#">Veja mais!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/image/projeto01.jpg" alt="Projeto01">
+                    <h3>Projeto 01</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi maxime. Eaque consequuntur dolorum.</p>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                            <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                            <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                            <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                            <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                            <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                        </div>
+                        <a href="#">Veja mais!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/image/projeto01.jpg" alt="Projeto01">
+                    <h3>Projeto 01</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi maxime. Eaque consequuntur dolorum.</p>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                            <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                            <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                            <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                            <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                            <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                        </div>
+                        <a href="#">Veja mais!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/image/projeto01.jpg" alt="Projeto01">
+                    <h3>Projeto 01</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi maxime. Eaque consequuntur dolorum.</p>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                            <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                            <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                            <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                            <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                            <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                        </div>
+                        <a href="#">Veja mais!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/image/projeto01.jpg" alt="Projeto01">
+                    <h3>Projeto 01</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi maxime. Eaque consequuntur dolorum.</p>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                            <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                            <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                            <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                            <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                            <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                        </div>
+                        <a href="#">Veja mais!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/image/projeto01.jpg" alt="Projeto01">
+                    <h3>Projeto 01</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, animi maxime. Eaque consequuntur dolorum.</p>
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                            <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                            <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                            <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                            <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                            <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                        </div>
+                        <a href="#">Veja mais!</a>
+                    </div>
                 </div>
             </div>
-            <button type="button" class="prev"></button>
-            <button type="button" class="next"></button>
         </div>
     </section>
+
+    <section id="about">
+        <div class="container-about">
+            <div class="content-about">
+                <div class="box-image">
+                    <img src="./assets/image/foto.jpg" alt="Foto perfil">
+                </div>
+                <h2><i class="fa-solid fa-bookmark"></i> Sobre mim</h2>
+                <br>
+                <h4>🚀 Minha trajetória na programação até agora.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nobis obcaecati totam maiores vero deleniti itaque officia dolore at ea consectetur eaque quidem neque dolorum quibusdam quae error, tempore quia!</p>
+                <br>
+
+                <h4>🛠️ Especialidades de projeto.</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas hic officia accusantium? Sequi nisi fugiat laborum autem praesentium. Consequuntur perferendis placeat voluptatibus doloribus eum distinctio animi at soluta repudiandae cupiditate!</p>
+                <br>
+
+                <h4>🎯 Objetivos</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat natus ratione obcaecati dolorem excepturi quod et magnam eaque inventore fuga iure saepe voluptatum delectus omnis labore commodi, distinctio voluptatem eveniet?</p>
+                <br>
+                
+            </div>
+        
+            <div class="line"></div>
+            <div class="best-projects">
+                <h2><i class="fa-solid fa-code"></i> Melhores projetos</h2>
+                <ul class="list-project">
+                    <li class="project-item">
+                        <a href="http://www.instagram.com" target="_blank" class="project-link">
+                            <img src="./assets/image/projeto01.jpg" alt="projeto">
+                            <div class="content">
+                                <h3>Nome Projeto 01</h3>
+                                <p>
+                                    Descrição de breve do projeto.
+                                </p>
+                                <div class="icon-list">
+                                    <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                                    <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                                    <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                                    <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                                    <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                                    <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-item">
+                        <a href="http://www.instagram.com" target="_blank" class="project-link">
+                            <img src="./assets/image/projeto01.jpg" alt="projeto">
+                            <div class="content">
+                                <h3>Nome Projeto 01</h3>
+                                <p>
+                                    Descrição de breve do projeto.
+                                </p>
+                                <div class="icon-list">
+                                    <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                                    <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                                    <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                                    <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                                    <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                                    <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-item">
+                        <a href="http://www.instagram.com" target="_blank" class="project-link">
+                            <img src="./assets/image/projeto01.jpg" alt="projeto">
+                            <div class="content">
+                                <h3>Nome Projeto 01</h3>
+                                <p>
+                                    Descrição de breve do projeto.
+                                </p>
+                                <div class="icon-list">
+                                    <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                                    <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                                    <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                                    <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                                    <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                                    <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project-item">
+                        <a href="http://www.instagram.com" target="_blank" class="project-link">
+                            <img src="./assets/image/projeto01.jpg" alt="projeto">
+                            <div class="content">
+                                <h3>Nome Projeto 01</h3>
+                                <p>
+                                    Descrição de breve do projeto.
+                                </p>
+                                <div class="icon-list">
+                                    <span><i class="fa-brands fa-html5 fa-xl" style="color: #E44D26;"></i></span>
+                                    <span><i class="fa-brands fa-css3-alt fa-xl" style="color: #264DE4;"></i></span>
+                                    <span><i class="fa-brands fa-php fa-xl" style="color: #8892BF;"></i></span>
+                                    <span><i class="fa-brands fa-js fa-xl" style="color: #F7DF1E;"></i></span>
+                                    <span><i class="fa-brands fa-wordpress fa-xl" style="color: #21759B;"></i></span>
+                                    <span><i class="fa-solid fa-database fa-xl" style="color: #00758F;"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container-contact">
+            <h2>Entre em Contato</h2>
+            <form class="form-contact">
+                <input type="text" placeholder="Digite seu nome" class="form-text" id="name">
+                <textarea class="form-text" id="message" rows="4"></textarea>
+                <button type="submit" id="btn_contact"></button>
+            </form>
+            <div class="info-contact">
+                <p><strong>Email:</strong> </p>
+                <p><strong>LinkedIn</strong> <a href="" target="_blank"></a></p>
+                <p><strong>GitHub</strong> <a href="" target="_blank"></a></p>
+                <p><strong>Instagram</strong> <a href="" target="_blank"></a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Desenvolvido por <a href="https://github.com/LuksDevs" target="_blank"><i class="fa-brands fa-github"></i> <strong>Lucas Ferreira</strong></a>. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

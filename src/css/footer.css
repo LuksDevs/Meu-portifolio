@@ -1,0 +1,14 @@
+footer {
+    background-color: var(--color-emphasis);    
+    padding: 25px 0;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+}
+footer > p > a {
+    color: var(--color-shadow_btn);
+}
+footer > p > a:hover {
+    color: var(--color-bg_btn);
+}

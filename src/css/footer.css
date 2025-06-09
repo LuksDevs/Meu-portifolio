@@ -12,3 +12,6 @@ footer > p > a {
 footer > p > a:hover {
     color: var(--color-bg_btn);
 }
+footer > p > a::after {
+    content: '🔗';
+}

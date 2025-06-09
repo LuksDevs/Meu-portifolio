@@ -13,7 +13,7 @@
     margin-bottom: 30px;
 }
 
-/* carousel protecj */
+/* carousel project */
 .carousel-container {
     position: relative;
     overflow: hidden;
@@ -83,22 +83,10 @@
     gap: 10px;
 }
 
-.carousel-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    width: 100%;
+.cursor-grab {
+  cursor: grab;
 }
-.btn-carousel {
-    background-color: var(--color-bg_btn);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #fff;
-    width: 60px;
-    height: 30px;
-    transition: background-color .4s ease-in-out, box-shadow .4s ease-in-out;
-}
-.btn-carousel:hover {
-    background-color: var(--color-hover_btn);
+
+.cursor-grabbing {
+  cursor: grabbing;
 }

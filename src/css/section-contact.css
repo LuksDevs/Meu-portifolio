@@ -4,8 +4,92 @@ section#contact {
 }
 .container-contact {
     background-color: var(--color-emphasis);
-    height: 150px;
-    border: 1px solid red;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 24px;
     max-width: 76%;
     margin-inline: auto;
+}
+
+.container-contact h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.7rem;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.form-text {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.3rem;
+    outline: none;
+    padding: 10px;
+    transition: box-shadow .3s ease-in-out;
+}
+.form-text:focus {
+    border: 1px solid var(--color-bg_btn);
+    box-shadow: 0 0 5px 2px var(--color-bg_btn);
+}
+#btn_contact {
+    align-self: center;
+    background-color: var(--color-bg_btn);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3rem;
+    outline: none;
+    padding: 5px 50px;
+    transition: background-color .4s ease-in-out;
+}
+#btn_contact:hover {
+    background-color: var(--color-hover_btn);
+}
+.info-contact {
+    align-self: flex-end;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    padding: 10px;
+}
+.info-contact h4 {
+    display: inline-block;
+    color: #9CA3AF;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #374151;
+}
+.info-contact p {
+    color: #ffff;
+    font-size: 1.3rem;
+}
+.info-contact p a,
+.info-contact p span {
+    color: #374151;
+}
+
+.info-contact p a:hover {
+    color: var(--color-bg_btn);
+}
+.info-contact p a:hover::after {
+    content: '🔗';
+}
+.info-contact p span:hover {
+    color: var(--color-bg_btn);
 }

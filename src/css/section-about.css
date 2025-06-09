@@ -14,6 +14,7 @@ section#about {
 .content-about {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     width: 55%;
 }
 .box-image {
@@ -43,7 +44,17 @@ section#about {
 .content-about p {
     color: #c3c3c3;
 }
-
+.btn-download {
+    background-color: var(--color-bg_btn);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+    transition: background-color .4s ease-in-out;
+}
+.btn-download:hover {
+    background-color: var(--color-hover_btn);
+}
 /* ---------------------------- */
 .best-projects {
     width: 45%;

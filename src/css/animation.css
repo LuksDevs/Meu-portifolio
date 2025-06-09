@@ -7,3 +7,14 @@
         transform: translateY(-15px);
     }
 }
+
+@keyframes modal {
+    0% {
+        top: -30%;
+        opacity: 0;
+    }
+    100% {
+        top: 7%;
+        opacity: 1;
+    }
+}

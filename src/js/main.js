@@ -17,7 +17,7 @@
             fieldName.value = '';
             fieldMessage.value = '';
         } else {
-            openModal('Preencha todos os campos')
+            openModal();
         }
         
     }
@@ -71,34 +71,18 @@ carousel.addEventListener('wheel', (e) => {
 
 
 // ======= script modal Alert ====== // 
-function openModal(msg) {
-    const divContainer = document.createElement('div');
-    const divContent = document.createElement('div');
 
-    if(!document.getElementById('modal_alert')){
-        divContainer.className = 'container-modal active';
-        divContainer.id = 'modal_alert';
+const blurModal = document.querySelector('.blur-modal');
+const modal = document.querySelector('.container-modal');
 
-        divContent.className = 'content-modal';
-        divContent.innerHTML = `
-            <h3 class="title-modal">Ops... algo deu errado!</h3>    
-            <div class="text-modal">
-                <p><i class="fa-solid fa-circle-info"></i> ${msg}</p>
-            </div>
-            <div class="box-btn-modal">
-                <button type="button" class="btn-modal" onclick="closeModal()">Fechar</button>
-            </div>
-        `;
-        divContainer.appendChild(divContent);
-    }
-    document.body.appendChild(divContainer);
+function openModal() {
+    blurModal.classList.add('active');
+    modal.classList.add('active');
+    document.body.classList.add('no-scroll');
 }
 
 function closeModal() {
-    const modal = document.getElementById('modal_alert');
-    if(modal) {
-        modal.classList.remove('active');
-        
-        modal.remove();
-    }
+    blurModal.classList.remove('active');
+    modal.classList.remove('active');
+    document.body.classList.remove('no-scroll');
 }

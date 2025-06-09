@@ -32,7 +32,10 @@
 
 body {
     background-color: var(--color-primary);
-    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;  
 }
 
 a {

@@ -17,7 +17,7 @@
             fieldName.value = '';
             fieldMessage.value = '';
         } else {
-            alert('Preencha todos os campos')
+            openModal('Preencha todos os campos')
         }
         
     }
@@ -69,9 +69,8 @@ carousel.addEventListener('wheel', (e) => {
     });
 });
 
+
 // ======= script modal Alert ====== // 
-
-
 function openModal(msg) {
     const divContainer = document.createElement('div');
     const divContent = document.createElement('div');
@@ -82,16 +81,24 @@ function openModal(msg) {
 
         divContent.className = 'content-modal';
         divContent.innerHTML = `
-            <h2 class="title-modal"> Ops... algo deu errado!</h2>
-            <hr>
+            <h3 class="title-modal">Ops... algo deu errado!</h3>    
             <div class="text-modal">
                 <p><i class="fa-solid fa-circle-info"></i> ${msg}</p>
             </div>
-            <button type="button" class="btn-modal">Fechar</button>
+            <div class="box-btn-modal">
+                <button type="button" class="btn-modal" onclick="closeModal()">Fechar</button>
+            </div>
         `;
         divContainer.appendChild(divContent);
     }
     document.body.appendChild(divContainer);
 }
 
-openModal('testando..');
+function closeModal() {
+    const modal = document.getElementById('modal_alert');
+    if(modal) {
+        modal.classList.remove('active');
+        
+        modal.remove();
+    }
+}

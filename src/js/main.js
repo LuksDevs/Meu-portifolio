@@ -21,8 +21,7 @@
         }
         
     }
-        
-
+    
 // ================ Script do carousel ================ //
 const carousel = document.getElementById('carousel');
 

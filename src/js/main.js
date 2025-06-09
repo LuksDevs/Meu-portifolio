@@ -7,9 +7,9 @@
         const fieldMessage = document.querySelector('#message').value;
         
         if(!fieldName == '' && !fieldMessage == ''){
-            const  telephone = '5581999954788';
-            const formatMessage = `Olá me chamo ${fieldName}, ${fieldMessage}`;
-            const message = encodeURIComponent(formatMessage);
+            const text = `Olá! Me chamo ${fieldName}, ${fieldMessage}`;
+            const message = encodeURIComponent(text);
+            const telephone = '5599999999999';
 
             const url = `https://wa.me/${telephone}?text=${message}`;
 
